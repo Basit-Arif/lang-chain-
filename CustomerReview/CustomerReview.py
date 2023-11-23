@@ -42,7 +42,7 @@ review_text = st.text_area("Enter your review here:", height=300)
 
 class ProductEntry(BaseModel):
     id: int 
-    customer_name: str | None = Field(description="Name of the customer") 
+    customer_name: str = Field(description="Name of the customer") 
     product_name: str | None
     problem: List[str] | str = Field(description="Problem with the product") 
 
