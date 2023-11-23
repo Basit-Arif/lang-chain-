@@ -7,10 +7,9 @@ from langchain.pydantic_v1 import BaseModel, Field, validator
 from langchain.chat_models import ChatOpenAI
 import os
 import openai
-from dotenv import load_dotenv
-import time
 
-load_dotenv()
+
+
 if 'validated' not in st.session_state:
     st.session_state.validated = False
 key = st.sidebar.text_input("Enter your OpenAI API Key", placeholder="Enter your OpenAI API Key", type="password")
