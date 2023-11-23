@@ -1,0 +1,7 @@
+typing
+streamlit 
+langchain
+os
+openai
+dotenv
+time
