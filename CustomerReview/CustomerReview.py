@@ -24,7 +24,7 @@ def validate_api_key(key):
     try:
         openai_instance.Completion.create(model="text-davinci-003", prompt="Hello", max_tokens=5)
         return True
-    except openai.error.AuthenticationError:
+    except :
         st.error("Invalid API Key")
         return False
 
