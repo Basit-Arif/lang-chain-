@@ -1,4 +1,4 @@
-from typing import List, Tuple
+from typing import List, Tuple,Union
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.output_parsers import PydanticOutputParser
@@ -44,7 +44,7 @@ class ProductEntry(BaseModel):
     id: int 
     customer_name: str = Field(description="Name of the customer") 
     product_name: str 
-    problem: List[str] | str = Field(description="Problem with the product") 
+    problem: Union[List[str], str] = Field(description="Problem with the product") 
 
 
 class Review(BaseModel):
