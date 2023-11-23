@@ -93,14 +93,15 @@ def review_to_json(review_text):
 
 
 #### model Deployment
-model = OpenAI(model_name="text-davinci-003", temperature=0.0,
-               openai_api_key=os.getenv("basit_key"))
+
 progress_text = "Operation in progress. Please wait."              
 my_bar = st.progress(0, text=progress_text)
 my_bar.empty()
 # print(model.predict("how are you"))
 if st.button("Convert") and st.session_state.validated:
         if review_text:
+            model = OpenAI(model_name="text-davinci-003", temperature=0.0,
+               openai_api_key=key)
             main_point = review_to_json(review_text)
             for percent_complete in range(100):
                 time.sleep(0.01)
