@@ -1,6 +1,6 @@
 pip
 typing
 streamlit 
-langchain
+langchaingit
 time
 openai == 0.28.0
