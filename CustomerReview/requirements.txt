@@ -3,4 +3,4 @@ typing
 streamlit 
 langchain
 
-opena
+openai
