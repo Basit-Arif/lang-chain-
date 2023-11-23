@@ -1,5 +1,5 @@
 pip
-Python==3.11.5
+python==3.11.5
 typing
 streamlit 
 langchain
